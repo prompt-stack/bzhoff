@@ -10,12 +10,17 @@ type ProfileSwitcherProps = {
 }
 
 export function ProfileSwitcher({ isCreatorProfile, onProfileChange }: ProfileSwitcherProps) {
+  const handleChange = (checked: boolean) => {
+    console.log('Switch clicked:', checked)
+    onProfileChange(checked)
+  }
+
   return (
     <nav className="flex items-center justify-between text-muted-foreground mb-8">
       <div className="flex items-center gap-2">
         <Link 
           href="/" 
-          className="text-xs hover:text-foreground"
+          className="text-xs hover:text-foreground transition-colors"
           onClick={() => onProfileChange(false)}
         >
           Home
@@ -27,21 +32,26 @@ export function ProfileSwitcher({ isCreatorProfile, onProfileChange }: ProfileSw
           </>
         )}
       </div>
-      <div className="relative flex items-center">
-        <div className="flex items-center gap-1.5 px-2">
+      <div className="relative flex items-center gap-3 bg-background/50 rounded-full px-3 py-1.5 shadow-[inset_0_0.5px_1px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_0.5px_1px_rgba(255,255,255,0.1)]">
+        <button 
+          className={`flex items-center gap-1.5 transition-colors ${!isCreatorProfile ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+          onClick={() => handleChange(false)}
+        >
           <User className="h-3 w-3" />
-          <span className="text-xs">Personal</span>
-        </div>
+          <span className="text-[11px] tracking-tight">Professional</span>
+        </button>
         <Switch
           id="profile-mode"
           checked={isCreatorProfile}
-          onCheckedChange={onProfileChange}
-          className="mx-2 data-[state=checked]:bg-green-500"
+          onCheckedChange={handleChange}
         />
-        <div className="flex items-center gap-1.5 px-2">
+        <button 
+          className={`flex items-center gap-1.5 transition-colors ${isCreatorProfile ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+          onClick={() => handleChange(true)}
+        >
           <Pencil className="h-3 w-3" />
-          <span className="text-xs">Creator</span>
-        </div>
+          <span className="text-[11px] tracking-tight">Creator</span>
+        </button>
       </div>
     </nav>
   )

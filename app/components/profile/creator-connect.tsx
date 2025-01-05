@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowUpRight, Mail } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import type { CreatorProfile } from "./types"
 
 type CreatorConnectProps = {
@@ -26,10 +26,6 @@ export function CreatorConnect({ profile }: CreatorConnectProps) {
             <ArrowUpRight className="h-4 w-4" />
           </Link>
         ))}
-        <div className="flex items-center gap-3 py-3 border-b border-border/40">
-          <Mail className="size-4" />
-          <span className="text-sm">sourcetms@protonmail.com</span>
-        </div>
       </div>
     </div>
   )

@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { ThemeToggle } from "@/app/theme-toggle"
-import { TooltipProvider } from "@/app/components/ui/tooltip"
 import { NewsletterSignup } from "@/app/components/newsletter-signup"
 import { ProfileSwitcher } from "@/app/components/profile-switcher"
 import { ProfileHeader } from "@/app/components/profile/profile-header"
@@ -20,33 +19,31 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <TooltipProvider>
-        <main className="container max-w-3xl mx-auto px-4 py-8">
-          <ProfileSwitcher 
-            isCreatorProfile={isCreatorProfile}
-            onProfileChange={(checked) => setIsCreatorProfile(checked)}
-          />
+      <main className="container max-w-3xl mx-auto px-4 py-8">
+        <ProfileSwitcher 
+          isCreatorProfile={isCreatorProfile}
+          onProfileChange={setIsCreatorProfile}
+        />
 
-          <ProfileHeader 
-            profile={currentProfile}
-            isCreatorProfile={isCreatorProfile}
-          />
+        <ProfileHeader 
+          profile={currentProfile}
+          isCreatorProfile={isCreatorProfile}
+        />
 
-          {isCreatorProfile ? (
-            <>
-              <CreatorContent profile={profiles.creator} />
-              <CreatorConnect profile={profiles.creator} />
-              <NewsletterSignup />
-            </>
-          ) : (
-            <PersonalLinks profile={profiles.personal} />
-          )}
+        {isCreatorProfile ? (
+          <>
+            <CreatorContent profile={profiles.creator} />
+            <CreatorConnect profile={profiles.creator} />
+            <NewsletterSignup />
+          </>
+        ) : (
+          <PersonalLinks profile={profiles.personal} />
+        )}
 
-          <PostsSection posts={posts} />
+        <PostsSection posts={posts} />
 
-          <Footer />
-        </main>
-      </TooltipProvider>
+        <Footer />
+      </main>
     </div>
   )
 }

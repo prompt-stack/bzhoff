@@ -31,7 +31,7 @@ export function ProfileHeader({ profile, isCreatorProfile }: ProfileHeaderProps)
           <h1 className="text-xl font-semibold">{profile.name}</h1>
         )}
         <Link 
-          href="mailto:sourcetms@protonmail.com"
+          href="mailto:brandonzhoff@gmail.com"
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
           <Mail className="h-4 w-4" />
@@ -52,7 +52,7 @@ export function ProfileHeader({ profile, isCreatorProfile }: ProfileHeaderProps)
             </div>
             <div className="pt-2">
               <Link href="/about">
-                <Button variant="ghost" className="text-xs text-muted-foreground hover:text-foreground px-0">
+                <Button variant="ghost" className="text-xs text-muted-foreground hover:text-foreground px-0 -ml-2">
                   About me
                   <ArrowUpRight className="h-3 w-3 ml-1" />
                 </Button>
@@ -61,13 +61,19 @@ export function ProfileHeader({ profile, isCreatorProfile }: ProfileHeaderProps)
           </>
         )}
 
-        <button
+        <Button
+          variant="ghost"
+          size="sm"
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
+          className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground h-auto p-0"
         >
           {isExpanded ? 'Show less' : 'Read more'}
-          <ChevronRight className={`h-3 w-3 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
-        </button>
+          <ChevronRight 
+            className={`h-3 w-3 transition-transform duration-200 ${
+              isExpanded ? 'rotate-90' : ''
+            }`} 
+          />
+        </Button>
       </div>
     </div>
   )

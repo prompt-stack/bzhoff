@@ -18,6 +18,7 @@ export function PersonalLinks({ profile }: PersonalLinksProps) {
   const [showAllProjects, setShowAllProjects] = useState(false)
   
   const visibleProjects = showAllProjects ? projects : projects.slice(0, 3)
+  const remainingCount = projects.length - 3
 
   const ProjectLink = ({ link }: { link: typeof profile.links[0] }) => (
     <Link
@@ -70,13 +71,19 @@ export function PersonalLinks({ profile }: PersonalLinksProps) {
             {visibleProjects.map((link) => (
               <ProjectLink key={link.title} link={link} />
             ))}
-            {projects.length > 3 && (
+            {remainingCount > 0 && (
               <Button
                 variant="ghost"
-                className="w-full mt-2 text-xs text-muted-foreground hover:text-foreground"
+                size="sm"
+                className="w-full mt-4 text-xs text-muted-foreground hover:text-foreground h-auto py-2"
                 onClick={() => setShowAllProjects(!showAllProjects)}
               >
-                <span>{showAllProjects ? 'Show less' : `View ${projects.length - 3} more projects`}</span>
+                <span>
+                  {showAllProjects 
+                    ? 'Show less' 
+                    : `View ${remainingCount} more project${remainingCount === 1 ? '' : 's'}`
+                  }
+                </span>
                 <ChevronRight 
                   className={`h-3 w-3 ml-1 transition-transform duration-200 ${
                     showAllProjects ? 'rotate-90' : ''

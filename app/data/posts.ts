@@ -15,27 +15,7 @@ export const posts: Post[] = [
     category: "Tech",
     slug: "the-rise-of-full-stack-creators"
   },
-  {
-    title: "Evolution of Work: New Jobs in an AI Future",
-    date: "Jan 2, 2025",
-    href: "/posts/evolution-of-work",
-    category: "AI",
-    slug: "evolution-of-work"
-  },
-  {
-    title: "A List of Websites to Delete Your B2B Data From",
-    date: "Jan 2, 2025",
-    href: "/posts/b2b-data-deletion",
-    category: "Privacy",
-    slug: "b2b-data-deletion"
-  },
-  {
-    title: "Guide: Writing Long-Form Content with Voice and AI",
-    date: "Dec 30, 2024",
-    href: "/posts/ai-content-guide",
-    category: "AI",
-    slug: "ai-content-guide"
-  },
+
 ]
 
 export function getAllCategories(): string[] {
