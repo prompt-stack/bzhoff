@@ -27,8 +27,11 @@ export const metadata = {
   authors: [{ name: 'Brandon Z. Hoff' }],
   creator: 'Brandon Z. Hoff',
   icons: {
-    icon: '/images/bzhoff-rudi-logo.png',
-    shortcut: '/images/bzhoff-rudi-logo.png',
+    icon: [
+      { url: '/favicon.png', sizes: 'any' },
+      { url: '/images/bzhoff-rudi-logo.png', type: 'image/png' }
+    ],
+    shortcut: '/favicon.png',
     apple: '/images/bzhoff-rudi-logo.png',
   },
   openGraph: {
