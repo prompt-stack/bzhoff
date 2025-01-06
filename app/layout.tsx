@@ -17,9 +17,9 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://bzhoff.vercel.app'),
+  metadataBase: new URL('https://bzhoff.com'),
   title: {
-    default: 'Brandon Z. Hoff | AI Innovation & Full-Stack Development',
+    default: 'Brandon Z. Hoff | AI Innovation & NextGen Development',
     template: '%s | Brandon Z. Hoff'
   },
   description: 'Exploring AI innovation, full-stack development, and the future of technology. Join me in building the next generation of digital solutions.',
@@ -29,8 +29,8 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://bzhoff.vercel.app',
-    title: 'Brandon Z. Hoff | AI Innovation & Full-Stack Development',
+    url: 'https://bzhoff.com',
+    title: 'Brandon Z. Hoff | AI Innovation & NextGenDevelopment',
     description: 'Exploring AI innovation, full-stack development, and the future of technology.',
     siteName: 'Brandon Z. Hoff',
     images: [{
@@ -42,7 +42,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brandon Z. Hoff | AI Innovation & Full-Stack Development',
+    title: 'Brandon Z. Hoff | AI Innovation & NetxGen Development',
     description: 'Exploring AI innovation, full-stack development, and the future of technology.',
     creator: '@hoffdigital',
     images: ['/og-image.png'],
