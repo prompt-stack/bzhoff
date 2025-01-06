@@ -26,6 +26,11 @@ export const metadata = {
   keywords: ['AI', 'Full-Stack Development', 'Technology', 'Innovation', 'Software Development', 'Digital Transformation'],
   authors: [{ name: 'Brandon Z. Hoff' }],
   creator: 'Brandon Z. Hoff',
+  icons: {
+    icon: '/images/bzhoff-rudi-logo.png',
+    shortcut: '/images/bzhoff-rudi-logo.png',
+    apple: '/images/bzhoff-rudi-logo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
