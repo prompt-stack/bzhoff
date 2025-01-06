@@ -1,22 +1,24 @@
+'use client'
+
 import Link from "next/link"
 import { ArrowUpRight } from 'lucide-react'
 import { ThemeToggle } from "@/app/theme-toggle"
-import { AuthorBio } from "@/app/components/ui/author-bio"
 import { NewsletterSignup } from "@/app/components/newsletter-signup"
 import { Footer } from "@/app/components/layout/footer"
+import { ShareButtons } from "@/app/components/share-buttons"
 
 interface MDXLayoutProps {
   children: React.ReactNode
   metadata?: {
     title?: string
     date?: string
-    author?: string
-    authorImage?: string
-    authorBio?: string
+    canonical?: string
   }
 }
 
 export function MDXLayout({ children, metadata }: MDXLayoutProps) {
+  const currentUrl = typeof window !== 'undefined' ? window.location.href : metadata?.canonical || ''
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
       <main className="container max-w-3xl mx-auto px-4 py-12">
@@ -44,17 +46,18 @@ export function MDXLayout({ children, metadata }: MDXLayoutProps) {
           {children}
         </article>
 
+        {/* Share buttons */}
+        <div className="mt-8 mb-4">
+          <h3 className="text-sm text-muted-foreground mb-2">Share this post</h3>
+          <ShareButtons 
+            url={currentUrl}
+            title={metadata?.title || ''}
+          />
+        </div>
+
         <div className="border-t border-border/40 mt-8 pt-6">
           <NewsletterSignup />
         </div>
-
-        {metadata?.author && (
-          <AuthorBio 
-            author={metadata.author}
-            image={metadata.authorImage || "/images/authors/hoff-linkedin.jpg"}
-            bio={metadata.authorBio}
-          />
-        )}
 
         <div className="mt-8 mb-8">
           <Link
