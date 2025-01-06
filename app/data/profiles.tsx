@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { MessageCircle, Send } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import type { PersonalProfile, CreatorProfile } from "@/app/components/profile/types"
 
 export const profiles = {
@@ -89,6 +89,11 @@ export const profiles = {
       }
     ],
     connectLinks: [
+      {
+        title: "Email",
+        href: "mailto:brandonzhoff@gmail.com",
+        icon: <Mail className="h-4 w-4" />,
+      },
       { 
         title: "LinkedIn",
         href: "https://www.linkedin.com/in/hoffbrandon/",

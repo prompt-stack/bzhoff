@@ -24,3 +24,17 @@
 - Monitor social sharing analytics
 - Gather user feedback on the new sharing functionality
 
+## Contact Information Updates
+
+### Footer Enhancements
+- Added "contact me" link with email icon in footer
+- Integrated with existing footer layout alongside theme toggle
+- Maintained clean, minimal aesthetic with hover effects
+- Updated email to use brandonzhoff@gmail.com
+
+### Profile Updates
+- Removed newsletter and telegram links from creator profile
+- Moved email contact to connect section
+- Streamlined social links to focus on key platforms (TikTok, YouTube)
+- Updated email information across all contact points
+

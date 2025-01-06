@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ThemeToggle } from "@/app/theme-toggle"
-import { Heart } from 'lucide-react'
+import { Heart, Mail } from 'lucide-react'
 import { cn } from "@/lib/utils"
 
 export function Footer() {
@@ -37,7 +37,17 @@ export function Footer() {
           )}
         </button>
       </div>
-      <ThemeToggle />
+
+      <div className="flex items-center gap-4">
+        <a
+          href="mailto:brandonzhoff@gmail.com"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Mail className="h-4 w-4" />
+          contact me
+        </a>
+        <ThemeToggle />
+      </div>
     </footer>
   )
 }

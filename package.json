@@ -61,6 +61,7 @@
     "react-hook-form": "^7.54.1",
     "react-markdown": "^9.0.1",
     "react-resizable-panels": "^2.1.7",
+    "react-share": "^5.1.2",
     "recharts": "2.15.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-katex": "^7.0.1",
