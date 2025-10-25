@@ -51,11 +51,59 @@ export const profiles = {
         description: "Interactive financial calculators for business planning",
         techStack: ["React", "Tailwind", "Radix UI", "Recharts"]
       },
-      { 
-        title: "Jobhoppr", 
+      {
+        title: "Jobhoppr",
         href: "https://jobhoppr.vercel.app",
         description: "Career transition platform for tech workers",
         techStack: ["React", "Node.js", "PostgreSQL"]
+      },
+      {
+        title: "Content Engine",
+        href: "https://github.com/prompt-stack/content-engine",
+        description: "Multi-platform content extraction tool for Reddit, TikTok, YouTube, and articles",
+        techStack: ["Python", "FastAPI", "PostgreSQL", "LLM Integration"]
+      },
+      {
+        title: "OTES Pro",
+        href: "https://github.com/prompt-stack/otes-pro",
+        description: "AI-powered Ohio teacher evaluation SaaS platform - saves evaluators 50% of time",
+        techStack: ["Next.js", "FastAPI", "Claude AI", "Whisper"]
+      },
+      {
+        title: "Content Stack",
+        href: "https://github.com/prompt-stack/content-stack",
+        description: "AI-powered content management and curation system with 36+ React components",
+        techStack: ["React", "TypeScript", "Vite", "BEM CSS"]
+      },
+      {
+        title: "Prompt Stack Lite",
+        href: "https://github.com/prompt-stack/prompt-stack-lite",
+        description: "AI development studio for building and shipping AI products",
+        techStack: ["TypeScript", "AI APIs", "Developer Tools"]
+      },
+      {
+        title: "Resonance",
+        href: "https://github.com/prompt-stack/resonance",
+        description: "Community audio collection platform focused on accessibility",
+        techStack: ["HTML", "JavaScript", "Audio Processing"]
+      },
+      {
+        title: "Grammar Ops",
+        href: "https://github.com/prompt-stack/grammar-ops",
+        description: "LLM-native codebase grammar system for code conventions",
+        techStack: ["Shell", "Code Analysis", "Documentation"]
+      },
+      {
+        title: "Clinician Timesheet",
+        href: "https://github.com/prompt-stack/clinician-timesheet",
+        description: "Schedule and appointment management for healthcare professionals",
+        techStack: ["TypeScript", "Next.js", "Database"]
+      },
+      {
+        title: "Endowment Calculator",
+        href: "https://github.com/prompt-stack/endowment-calculator",
+        description: "Financial planning tool for wealth projections and endowment management",
+        techStack: ["TypeScript", "React", "Financial Models"]
       },
     ]
   } satisfies PersonalProfile,
