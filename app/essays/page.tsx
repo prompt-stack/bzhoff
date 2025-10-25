@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    title: "The Great Organizational Schism: How AI Is Tearing Companies Apart",
+    slug: "organizational-schism",
+    description: "Nearly half of C-suite executives report that AI adoption is tearing their company apart. An investigative analysis of why AI isn't failing because of technology—it's revealing every organizational dysfunction companies have been ignoring for decades. Based on research from Wharton School, industry surveys, and practitioner voices.",
+    publishedDate: "October 25, 2025",
+    readTime: "45 min read",
+    tags: ["AI Adoption", "Organizational Change", "Enterprise AI", "Digital Transformation", "Investigative"]
+  },
+  {
     title: "Machines Kept Their Promise — We Didn't",
     slug: "machines-kept-their-promise",
     description: "A collaborative essay between human and machine exploring why automation created wealth but not prosperity. In 1966, TIME predicted machines would make us all wealthy by 2000. The machines kept their promise—they created abundance. We just didn't share it.",
