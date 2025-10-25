@@ -4,6 +4,33 @@ import { ChevronRight, Mail, Github, Linkedin } from 'lucide-react'
 import { Button } from "@/app/components/primitives"
 import { Footer } from "@/app/components/features"
 import { Timeline } from "@/app/components/composed"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Brandon Z. Hoff | AI Literacy Researcher',
+  description: 'AI literacy researcher and founder of RUDI (Responsible Use of Digital Intelligence). 4,000+ hours mastering AI, teaching 80,000+ people to build software with AI. Background in e-commerce, finance, and global business.',
+  keywords: [
+    'Brandon Hoff bio',
+    'AI literacy researcher',
+    'RUDI founder',
+    'AI education',
+    'AI training expert',
+    'full-stack developer',
+    'AI-powered development',
+    'technology democratization'
+  ],
+  openGraph: {
+    title: 'About Brandon Z. Hoff | AI Literacy Researcher',
+    description: 'AI literacy researcher and RUDI founder teaching people to build software with AI',
+    url: 'https://bzhoff.com/about',
+    type: 'profile',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Brandon Z. Hoff | AI Literacy Researcher',
+    description: 'AI literacy researcher and RUDI founder teaching people to build software with AI',
+  }
+}
 
 const timelineItems = [
   {
@@ -83,11 +110,15 @@ export default function AboutPage() {
           
           <div className="prose prose-sm prose-gray dark:prose-invert">
             <p className="text-base mb-4">
-              I've been blessed with quite a journey - one filled with diverse experiences, incredible learning opportunities, and the unwavering support of a strong community of friends, family, and mentors. My path has been anything but conventional, and that's what makes it special.
+              I'm an AI literacy researcher and the founder of RUDI (Responsible Use of Digital Intelligence). My mission is simple: democratize access to technology by teaching non-technical individuals how to build sophisticated software using AI tools.
             </p>
-            
+
+            <p className="text-base mb-4">
+              After ChatGPT's release in 2022, I dedicated over 4,000 hours to mastering AI technologies and understanding their transformative potential. What I discovered changed everything: generative AI makes programming accessible to creative people who never went to computer science school. If you have ideas and want to build digital products, AI can help you bring them to life.
+            </p>
+
             <p className="text-base mb-8">
-              While my professional journey spans technology, finance, gaming, and entrepreneurship, it's the human connections and opportunities to give back that truly define my story. I'm deeply passionate about helping others and creating positive impact in the world. Below is a glimpse into my journey - though it captures my professional evolution, each step represents countless moments of growth, learning, and meaningful connections that have shaped who I am today.
+              Today, I lead a community of 80,000+ tech enthusiasts, develop AI-powered solutions, and create frameworks for responsible AI adoption. My diverse background—spanning e-commerce ($3M cooperative), finance, and global business experience across Cincinnati, Tanzania, and Europe—informs my belief that linguistic capital and programming shouldn't be gatekept. AI changes everything.
             </p>
 
             <h2 className="mb-6">Journey & Accomplishments</h2>
