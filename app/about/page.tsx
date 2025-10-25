@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Brandon Z. Hoff | AI Literacy Researcher',
-  description: 'AI literacy researcher and founder of RUDI (Responsible Use of Digital Intelligence). 4,000+ hours mastering AI, teaching 80,000+ people to build software with AI. Background in e-commerce, finance, and global business.',
+  description: 'AI literacy researcher and founder of RUDI (Responsible Use of Digital Intelligence). 8,000+ hours mastering AI, teaching 80,000+ people to build software with AI. Background in e-commerce, finance, and global business.',
   keywords: [
     'Brandon Hoff bio',
     'AI literacy researcher',
@@ -36,7 +36,7 @@ const timelineItems = [
   {
     year: "2022-Present",
     title: "AI Literacy Research & RUDI",
-    description: "After ChatGPT's release, dedicated over 4,000 hours to mastering AI technologies. Founded RUDI (Responsible Use of Digital Intelligence) to advance AI literacy and responsible adoption, developing original frameworks and training programs. Built a community of 80,000+ tech enthusiasts while creating AI-powered solutions."
+    description: "After ChatGPT's release, dedicated over 8,000 hours to mastering AI technologies. Founded RUDI (Responsible Use of Digital Intelligence) to advance AI literacy and responsible adoption, developing original frameworks and training programs. Built a community of 80,000+ tech enthusiasts while creating AI-powered solutions."
   },
   {
     year: "2019-2023",
@@ -114,7 +114,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-base mb-4">
-              After ChatGPT's release in 2022, I dedicated over 4,000 hours to mastering AI technologies and understanding their transformative potential. What I discovered changed everything: generative AI makes programming accessible to creative people who never went to computer science school. If you have ideas and want to build digital products, AI can help you bring them to life.
+              After ChatGPT's release in 2022, I dedicated over 8,000 hours to mastering AI technologies and understanding their transformative potential. What I discovered changed everything: generative AI makes programming accessible to creative people who never went to computer science school. If you have ideas and want to build digital products, AI can help you bring them to life.
             </p>
 
             <p className="text-base mb-8">
