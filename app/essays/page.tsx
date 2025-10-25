@@ -32,6 +32,14 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    title: "The Cost of Colossus: What Memphis Reveals About AI's Future",
+    slug: "cost-of-colossus",
+    description: "Five days after Grok 4 became one of the world's most powerful AI models, Alexis Humphreys had her first severe asthma attack in 15 years. An investigation into what happens when Silicon Valley's 'move fast' mentality meets a community already choking on decades of pollution. Synthesized from 18 sources including Reddit, YouTube, and investigative journalism.",
+    publishedDate: "October 25, 2025",
+    readTime: "35 min read",
+    tags: ["AI Infrastructure", "Environmental Justice", "Investigative", "Memphis", "Data Centers", "AI Ethics"]
+  },
+  {
     title: "The Great Organizational Schism: How AI Is Tearing Companies Apart",
     slug: "organizational-schism",
     description: "Nearly half of C-suite executives report that AI adoption is tearing their company apart. An investigative analysis of why AI isn't failing because of technology—it's revealing every organizational dysfunction companies have been ignoring for decades. Based on research from Wharton School, industry surveys, and practitioner voices.",

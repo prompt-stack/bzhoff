@@ -41,5 +41,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/essays/cost-of-colossus`,
+      lastModified: '2025-10-25',
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }
