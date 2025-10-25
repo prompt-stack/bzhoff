@@ -19,16 +19,26 @@ export const metadata: Metadata = {
     'AI-powered development',
     'technology democratization'
   ],
+  alternates: {
+    canonical: 'https://bzhoff.com/about'
+  },
   openGraph: {
     title: 'About Brandon Z. Hoff | AI Literacy Researcher',
     description: 'AI literacy researcher and RUDI founder teaching people to build software with AI',
     url: 'https://bzhoff.com/about',
     type: 'profile',
+    images: [{
+      url: 'https://bzhoff.com/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'About Brandon Z. Hoff'
+    }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'About Brandon Z. Hoff | AI Literacy Researcher',
     description: 'AI literacy researcher and RUDI founder teaching people to build software with AI',
+    images: ['https://bzhoff.com/og-image.png'],
   }
 }
 

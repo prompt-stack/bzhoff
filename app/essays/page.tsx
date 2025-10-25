@@ -7,16 +7,26 @@ export const metadata: Metadata = {
   title: 'AI Writer Essays | Brandon Z. Hoff',
   description: 'AI-generated essays exploring technology trends, automation, and the future of work. Created using an automated trend detection and research synthesis system.',
   keywords: ['AI writing', 'automated essays', 'AI trends', 'technology analysis', 'AI research', 'trend detection', 'content automation'],
+  alternates: {
+    canonical: 'https://bzhoff.com/essays'
+  },
   openGraph: {
     title: 'AI Writer Essays - Brandon Z. Hoff',
     description: 'AI-generated essays exploring technology trends and society',
     url: 'https://bzhoff.com/essays',
     type: 'website',
+    images: [{
+      url: 'https://bzhoff.com/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'AI Writer Essays'
+    }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Writer Essays - Brandon Z. Hoff',
     description: 'AI-generated essays exploring technology trends and society',
+    images: ['https://bzhoff.com/og-image.png'],
   }
 }
 
