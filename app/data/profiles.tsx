@@ -2,108 +2,93 @@
 
 import React from 'react'
 import { Mail } from 'lucide-react'
-import type { PersonalProfile, CreatorProfile } from "@/app/components/profile/types"
+import type { PersonalProfile, CreatorProfile } from "@/app/components/features/profile/types"
 
 export const profiles = {
   personal: {
     name: "Brandon Z. Hoff",
     title: "Home",
-    subtitle: "AI researcher, Entrepreneur, Developer",
-    mainContent: "AI researcher and self-taught developer focused on responsible AI adoption. Previously led commercial initiatives in finance and built a seven-figure e-commerce cooperative. Passionate about using technology to create meaningful impact.",
+    subtitle: "AI Literacy Researcher, Entrepreneur, Developer",
+    mainContent: "I believe technology should be accessible to everyone. Generative AI makes programming possible for creative people who never went to computer science school—if you have ideas and want to build digital products, AI can help you bring them to life. That's what I do, and here's what I've built.",
     expandedContent: [
-      "Founded RUDI (Responsible Use of Digital Intelligence) to advance AI education and integration strategies. Built multiple AI-powered applications using Next.js, Python, and various AI APIs.",
-      "A citizen of the world with deep interests in philosophy, theology, and learning. Having lived across Cincinnati, Tanzania, and Europe, this global perspective shapes my approach to building technology that matters."
+      "Founded RUDI (Responsible Use of Digital Intelligence) to advance AI literacy and democratize technology access. I use AI daily to build real products—SaaS platforms, content systems, developer tools—proving that anyone with creativity and drive can create sophisticated software.",
+      "My background spans e-commerce ($3M cooperative), finance, and global experience across Cincinnati, Tanzania, and Europe. This diversity shapes my belief: linguistic capital and programming shouldn't be gatekept. AI changes everything."
     ],
     links: [
-      { 
-        title: "RUDI", 
-        href: "https://rudi-ai.vercel.app",
-        description: "Responsible Use of Digital Intelligence - AI research assistant",
-        techStack: ["Next.js", "OpenAI", "Anthropic"]
-      },
-      { 
-        title: "Heritage Hill", 
-        href: "https://heritagehill.vercel.app",
-        description: "E-commerce cooperative case study with $3M+ revenue analysis (2019-2023)",
-        techStack: ["Next.js", "TypeScript", "Recharts", "Framer Motion"]
-      },
-      { 
-        title: "Beatrice Kitchen", 
-        href: "https://cook-with-beatrice.vercel.app",
-        description: "AI-powered recipe extraction from cooking videos",
-        techStack: ["React", "TypeScript", "Supabase", "Anthropic", "Python"]
-      },
-      { 
-        title: "WWJD", 
-        href: "https://wwjd-omega.vercel.app",
-        description: "AI-powered spiritual guidance and community prayer platform",
-        techStack: ["Next.js", "TypeScript", "Anthropic", "Framer Motion"]
-      },
-      { 
-        title: "Speech to Tweet", 
-        href: "#",
-        description: "Cross-platform social media automation suite",
-        techStack: ["Python", "Twitter API", "OpenAI"]
-      },
-      { 
-        title: "Business Planner", 
-        href: "https://smartplan-xi.vercel.app",
-        description: "Interactive financial calculators for business planning",
-        techStack: ["React", "Tailwind", "Radix UI", "Recharts"]
+      // AI LITERACY MISSION
+      {
+        title: "RUDI",
+        href: "https://github.com/prompt-stack/rudi",
+        description: "Responsible Use of Digital Intelligence - AI literacy framework and training platform",
+        techStack: ["AI Curriculum", "Training Programs", "Education"],
+        category: "mission"
       },
       {
-        title: "Jobhoppr",
-        href: "https://jobhoppr.vercel.app",
-        description: "Career transition platform for tech workers",
-        techStack: ["React", "Node.js", "PostgreSQL"]
-      },
-      {
-        title: "Content Engine",
-        href: "https://github.com/prompt-stack/content-engine",
-        description: "Multi-platform content extraction tool for Reddit, TikTok, YouTube, and articles",
-        techStack: ["Python", "FastAPI", "PostgreSQL", "LLM Integration"]
+        title: "Upskill Ohio",
+        href: "https://github.com/prompt-stack/upskill-ohio",
+        description: "Commercial AI training platform - TechCred funding resource for Ohio workforce development",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        category: "mission"
       },
       {
         title: "OTES Pro",
         href: "https://github.com/prompt-stack/otes-pro",
-        description: "AI-powered Ohio teacher evaluation SaaS platform - saves evaluators 50% of time",
-        techStack: ["Next.js", "FastAPI", "Claude AI", "Whisper"]
+        description: "AI-powered teacher evaluation SaaS - saves evaluators 50% of time ($1.50/eval, 92% margins)",
+        techStack: ["Next.js", "FastAPI", "Claude AI", "Whisper"],
+        category: "mission"
+      },
+
+      // COMMERCIAL PROJECTS
+      {
+        title: "Heritage Hill",
+        href: "https://heritagehill.vercel.app",
+        description: "E-commerce cooperative case study with $3M+ revenue analysis (2019-2023)",
+        techStack: ["Next.js", "TypeScript", "Recharts"],
+        category: "commercial"
+      },
+      {
+        title: "WWJD",
+        href: "https://wwjd-omega.vercel.app",
+        description: "AI-powered spiritual guidance and community prayer platform",
+        techStack: ["Next.js", "Anthropic", "Community"],
+        category: "commercial"
+      },
+      {
+        title: "Content Engine",
+        href: "https://github.com/prompt-stack/content-engine",
+        description: "Multi-platform content extraction API for Reddit, TikTok, YouTube, and articles",
+        techStack: ["Python", "FastAPI", "PostgreSQL"],
+        category: "commercial"
+      },
+
+      // TECHNICAL PORTFOLIO
+      {
+        title: "AI Writer",
+        href: "/essays",
+        description: "Automated trend detection and research synthesis - monitors AI conversations to generate essays",
+        techStack: ["AI Research", "Content Generation", "Trend Analysis"],
+        category: "technical"
       },
       {
         title: "Content Stack",
         href: "https://github.com/prompt-stack/content-stack",
-        description: "AI-powered content management and curation system with 36+ React components",
-        techStack: ["React", "TypeScript", "Vite", "BEM CSS"]
-      },
-      {
-        title: "Prompt Stack Lite",
-        href: "https://github.com/prompt-stack/prompt-stack-lite",
-        description: "AI development studio for building and shipping AI products",
-        techStack: ["TypeScript", "AI APIs", "Developer Tools"]
-      },
-      {
-        title: "Resonance",
-        href: "https://github.com/prompt-stack/resonance",
-        description: "Community audio collection platform focused on accessibility",
-        techStack: ["HTML", "JavaScript", "Audio Processing"]
+        description: "AI-powered content management system with 36+ React components",
+        techStack: ["React", "TypeScript", "Vite"],
+        category: "technical"
       },
       {
         title: "Grammar Ops",
         href: "https://github.com/prompt-stack/grammar-ops",
-        description: "LLM-native codebase grammar system for code conventions",
-        techStack: ["Shell", "Code Analysis", "Documentation"]
+        description: "LLM-native codebase grammar system - 75x token reduction through metadata-driven navigation",
+        techStack: ["Shell", "Code Analysis", "LLM"],
+        category: "technical"
       },
       {
-        title: "Clinician Timesheet",
-        href: "https://github.com/prompt-stack/clinician-timesheet",
-        description: "Schedule and appointment management for healthcare professionals",
-        techStack: ["TypeScript", "Next.js", "Database"]
-      },
-      {
-        title: "Endowment Calculator",
-        href: "https://github.com/prompt-stack/endowment-calculator",
-        description: "Financial planning tool for wealth projections and endowment management",
-        techStack: ["TypeScript", "React", "Financial Models"]
+        title: "VAPI",
+        href: "https://github.com/prompt-stack/vapi",
+        description: "Voice AI integration platform with 69 components for telephony and voice assistants",
+        techStack: ["JavaScript", "Voice AI", "Telephony"],
+        category: "technical"
       },
     ]
   } satisfies PersonalProfile,
@@ -114,7 +99,7 @@ export const profiles = {
     mainContent: "I create content exploring how AI will impact the way we live, learn, and work. My focus is on demystifying technology to help people elevate their professional lives. I'm building the next generation of full-stack creators, showing non-technical individuals how to accelerate their learning and master software development with AI.",
     expandedContent: [
       "Through content, education, and community building, I guide the next generation of learners and builders in using AI tools to transform their capabilities.",
-      "Join over 20,000 tech enthusiasts exploring the intersection of AI and the future of work."
+      "Join over 80,000 tech enthusiasts exploring the intersection of AI and the future of work."
     ],
     socialLinks: [
       { 

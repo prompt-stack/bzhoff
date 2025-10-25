@@ -1,13 +1,10 @@
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "./theme-provider"
-import { TooltipProvider } from "@/app/components/ui/tooltip"
-import { MDXProviderClient } from '@/app/components/markdown/mdx-provider'
+import { TooltipProvider } from "@/app/components/composed"
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
 import "./globals.css"
-import './mdx.css'
-import 'katex/dist/katex.min.css'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -100,9 +97,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
-            <MDXProviderClient>
-              {children}
-            </MDXProviderClient>
+            {children}
           </TooltipProvider>
           <Analytics />
           <SpeedInsights />

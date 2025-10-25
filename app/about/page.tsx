@@ -1,15 +1,15 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ChevronRight, Mail, Github, Linkedin } from 'lucide-react'
-import { Button } from "@/app/components/ui/button"
-import { Footer } from "@/app/components/layout/footer"
-import { Timeline } from "@/app/components/ui/timeline"
+import { Button } from "@/app/components/primitives"
+import { Footer } from "@/app/components/features"
+import { Timeline } from "@/app/components/composed"
 
 const timelineItems = [
   {
     year: "2022-Present",
-    title: "AI Transformation & RUDI",
-    description: "After ChatGPT's release, dedicated over 4,000 hours to mastering AI technologies. Founded RUDI to help others leverage AI responsibly, building a community of 20,000+ tech enthusiasts and developing AI-powered solutions."
+    title: "AI Literacy Research & RUDI",
+    description: "After ChatGPT's release, dedicated over 4,000 hours to mastering AI technologies. Founded RUDI (Responsible Use of Digital Intelligence) to advance AI literacy and responsible adoption, developing original frameworks and training programs. Built a community of 80,000+ tech enthusiasts while creating AI-powered solutions."
   },
   {
     year: "2019-2023",
@@ -119,7 +119,7 @@ export default function AboutPage() {
               </Link>
               <div className="flex items-center gap-3">
                 <Button variant="ghost" size="sm" className="gap-2" asChild>
-                  <Link href="https://github.com/rudijetson" target="_blank">
+                  <Link href="https://github.com/prompt-stack" target="_blank">
                     <Github className="h-4 w-4" />
                     GitHub
                   </Link>
