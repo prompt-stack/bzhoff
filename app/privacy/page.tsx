@@ -54,7 +54,7 @@ export default function PrivacyPage() {
           <li>Revoke application access at any time through Facebook settings</li>
         </ul>
 
-        <h2>7. Data Deletion</h2>
+        <h2 id="data-deletion">7. Data Deletion</h2>
         <p>To request deletion of your data:</p>
         <ol>
           <li>Go to your Facebook Settings & Privacy</li>
@@ -62,7 +62,14 @@ export default function PrivacyPage() {
           <li>Find "Social Media Publisher" and click "Remove"</li>
           <li>Alternatively, email us at: brandonzhoff@gmail.com</li>
         </ol>
-        <p>We will delete all stored data within 30 days of your request.</p>
+        <p>
+          We will delete all stored data within 30 days of your request. Since our application stores data locally on your device
+          and does not maintain server-side user databases, removing the app from Facebook automatically removes all access.
+        </p>
+        <p>
+          When you remove the app from Facebook, Facebook will send an automated deletion request to our system,
+          and we will confirm the deletion. You will receive a confirmation that your data deletion request has been processed.
+        </p>
 
         <h2>8. Children's Privacy</h2>
         <p>Our application is not intended for users under the age of 13. We do not knowingly collect personal information from children.</p>
